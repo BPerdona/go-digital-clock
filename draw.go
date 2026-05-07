@@ -22,14 +22,14 @@ func DrawClock(screen *ebiten.Image, win_w, win_h float32, bluePrint [6][7]bool)
 	drawDigit(screen, center-(space*6), win_h/2, bluePrint[0])
 	drawDigit(screen, center-(space*4), win_h/2, bluePrint[1])
 
-	vector.FillCircle(screen, center-(space*2.5), win_h/2+DIGIT_OFFSET, DOT_SIZE, DIAMOND_CLR_ON, false)
-	vector.FillCircle(screen, center-(space*2.5), win_h/2-DIGIT_OFFSET, DOT_SIZE, DIAMOND_CLR_ON, false)
+	vector.FillCircle(screen, center-(space*2.5), win_h/2+DIGIT_OFFSET, DOT_SIZE, DIAMOND_CLR_ON, true)
+	vector.FillCircle(screen, center-(space*2.5), win_h/2-DIGIT_OFFSET, DOT_SIZE, DIAMOND_CLR_ON, true)
 
 	drawDigit(screen, center-space, win_h/2, bluePrint[2])
 	drawDigit(screen, center+space, win_h/2, bluePrint[3])
 
-	vector.FillCircle(screen, center+(space*2.5), win_h/2+DIGIT_OFFSET, DOT_SIZE, DIAMOND_CLR_ON, false)
-	vector.FillCircle(screen, center+(space*2.5), win_h/2-DIGIT_OFFSET, DOT_SIZE, DIAMOND_CLR_ON, false)
+	vector.FillCircle(screen, center+(space*2.5), win_h/2+DIGIT_OFFSET, DOT_SIZE, DIAMOND_CLR_ON, true)
+	vector.FillCircle(screen, center+(space*2.5), win_h/2-DIGIT_OFFSET, DOT_SIZE, DIAMOND_CLR_ON, true)
 
 	drawDigit(screen, center+(space*4), win_h/2, bluePrint[4])
 	drawDigit(screen, center+(space*6), win_h/2, bluePrint[5])
